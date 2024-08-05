@@ -1,0 +1,460 @@
+.fill {
+  object-fit: cover;
+  object-position: middle center;
+}
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  margin: 0;
+  padding: 0px;
+  background: #b0b0b0;
+}
+body.darkbg {
+  background: #222222;
+}
+* {
+  font-family: sans-serif;
+  font-weight: 200;
+  color: #444444;
+  letter-spacing: 1px;
+}
+a {
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+a:hover {
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+a span {
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.hero {
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  font-size: 0;
+  margin: 0px;
+}
+img.big {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 0px;
+  text-transform: none;
+}
+.nav {
+  position: absolute;
+  opacity: 0;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  margin: 100px;
+}
+.nav a {
+  text-decoration: none;
+  display: block;
+  margin: 0 5px 5px 0;
+  font-size: 11px;
+  font-weight: 200;
+}
+.nav a span {
+  font-size: 12px;
+}
+.nav a:hover,
+.nav a.active {
+  color: white;
+}
+.nav a:hover span,
+.nav a.active span {
+  color: #00aa22;
+  margin-right: 3px;
+}
+footer {
+  margin: 0;
+  background-color: #111111;
+  width: 100%;
+  color: #b0b0b0;
+  font-size: 11px;
+  line-height: 18px;
+  margin-top: -5px;
+}
+footer a {
+  text-decoration: none;
+  color: #bbbbbb;
+}
+footer a:hover {
+  color: #efefef;
+}
+footer .social {
+  padding: 80px;
+  vertical-align: middle;
+  color: #aaaaaa;
+}
+.titleBlock {
+  padding: 100px;
+  position: relative;
+}
+.titleBlock h1 {
+  font-size: 24px;
+}
+.titleBlock h2 {
+  font-size: 16px;
+}
+.titleBlock.drk {
+  background-color: #222222;
+}
+.titleBlock.drk h1 {
+  color: #cccccc;
+}
+.titleBlock.drk h2 {
+  color: #cccccc;
+}
+.textBlock {
+  padding: 0px;
+  position: relative;
+  left: 0;
+  right: 0;
+  display: block;
+  overflow: hidden;
+}
+.textBlock .contenido {
+  padding: 100px;
+  left: 0;
+  right: 30%;
+  line-height: 24px;
+}
+.textBlock .contenido h1 {
+  font-size: 24px;
+}
+.textBlock .contenido h2 {
+  font-size: 18px;
+}
+.textBlock .contenido p {
+  font-size: 14px;
+  max-width: 54%;
+}
+.textBlock > img {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  object-position: middle center;
+  max-width: 40%;
+  object-fit: cover;
+}
+.textBlock.inv .contenido {
+  left: 0;
+  right: 0;
+  padding: 100px;
+}
+.textBlock.inv .contenido p {
+  margin-left: 45%;
+  max-width: 55%;
+}
+.textBlock.inv > img {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  object-fit: cover;
+  object-position: middle center;
+  max-width: 40%;
+}
+.textBlock.drk {
+  color: #b0b0b0;
+  background: #222222;
+  border-bottom: none;
+}
+.textBlock.drk p,
+.textBlock.drk h1,
+.textBlock.drk h2,
+.textBlock.drk i,
+.textBlock.drk b {
+  color: #999999;
+}
+.light .textBlock {
+  background: #b0b0b0;
+  color: #444444;
+}
+.light .textBlock p,
+.light .textBlock h1,
+.light .textBlock h2 {
+  color: inherit;
+}
+.dark .textBlock {
+  color: #b0b0b0;
+  background: #444444;
+  border-bottom: none;
+}
+.dark .textBlock p,
+.dark .textBlock h1,
+.dark .textBlock h2 {
+  color: inherit;
+}
+.blackbg .dark .textBlock {
+  color: #b0b0b0;
+  background: #222222;
+  border-bottom: none;
+}
+.blackbg .dark .textBlock p,
+.blackbg .dark .textBlock h1,
+.blackbg .dark .textBlock h2 {
+  color: inherit;
+}
+.blackbg .dark .textBlock p > img,
+.blackbg .dark .textBlock h1 > img,
+.blackbg .dark .textBlock h2 > img {
+  opacity: 0.8;
+}
+.textBlock a {
+  text-decoration: underline;
+  color: #00aa22;
+  font-weight: 300;
+}
+.textBlock a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.full .fullhit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.full .fullcont {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.full .closeBut {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+  color: #00aa22;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.full .closeBut:hover {
+  color: white;
+}
+.video {
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 100%;
+  max-width: 38%;
+  object-fit: cover;
+  object-position: middle center;
+}
+.video > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: middle center;
+}
+.video .vplay {
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.video .vplay:hover {
+  opacity: 1;
+}
+.inv .video {
+  left: 0;
+}
+.inv .video .vplay {
+  right: 20px;
+  left: auto;
+}
+@media (max-width: 767px) {
+  .textBlock .contenido,
+  .textBlock.inv .contenido {
+    padding: 40px;
+  }
+  .textBlock .contenido p,
+  .textBlock.inv .contenido p {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .textBlock > img,
+  .textBlock.inv > img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .textBlock .video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .textBlock p,
+  .textBlock > img,
+  .textBlock .video {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+.videoBlock {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #222222;
+}
+.videoBlock .video {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  right: auto;
+  width: 33.2%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .videoBlock .video {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}
+.boxesLine {
+  font-size: 0;
+  position: relative;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.boxesLine .video {
+  width: 49%;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  height: 100%;
+  min-height: 300px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.boxesLine .img {
+  width: 49%;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.boxesLine .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.boxesLine .textoBox {
+  width: 49%;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #cccccc;
+}
+.boxesLine .textoBox .contenido {
+  top: 0;
+  padding: 100px;
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 22px;
+}
+.boxesLine .textoBox .contenido p {
+  color: #cccccc;
+}
+b {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #ffffff;
+}
+.drk .contenido b {
+  color: white;
+  line-height: 24px;
+}
+img.big {
+  margin-bottom: -15px;
+}
+i {
+  font-style: italic;
+}
