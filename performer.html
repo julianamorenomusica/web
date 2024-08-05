@@ -15,6 +15,41 @@
 		.siteTitle {
 			cursor: pointer;
 		}
+
+		.imgboxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the images horizontally */
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Removes default list styles */
+}
+
+.imgboxes img {
+   
+    max-width: 100%; /* Ensures images do not exceed their natural size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0; /* Ensures no margin */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+}
+
+@media (min-width: 1200px) {
+    .imgboxes {
+        justify-content: flex-start; /* Aligns images to the start when container width exceeds 1200px */
+    }
+
+    .imgboxes img {
+        width: calc(100% / 6); /* Each image takes 1/6th of the container's width */
+    }
+}
+
+@media (max-width: 1200px) {
+    .imgboxes img {
+        width: calc(100% / 3); /* Each image takes 1/3rd of the container's width */
+    }
+}
+
 	</style>
 </head>
 
@@ -41,9 +76,7 @@
 
 
 
-
-
-
+ 
 
 	<div class='textBlock drk inv' style='margin-top:0px;background-color: black;'>
 
@@ -76,6 +109,14 @@
 	<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1idqSChXKdHZQbnOhJHgoU?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
+<div class='imgboxes'>
+	<img src='img/cardinal/cardina_tempo.jpeg'>
+	<img src='img/cardinal/cardinal_camino.jpeg'>
+	<img src='img/cardinal/cardinal_demora.jpeg'>
+	<img src='img/cardinal/cardinal_ella.jpeg'>
+	<img src='img/cardinal/cardinal-hiro.jpeg'>
+	<img src='img/cardinal/cardinal.jpeg'>
+</div>
 
  
 <div class='textBlock inv' style='margin-top:0px;'>
